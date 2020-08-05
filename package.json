@@ -1,11 +1,30 @@
 {
   "name": "hsl-to-hex",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && tap --cov test",
+    "lint": "standard"
   },
   "author": "Alex Malin",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexNiallMalin/hsl-to-hex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexNiallMalin/hsl-to-hex/issues"
+  },
+  "homepage": "https://github.com/AlexNiallMalin/hsl-to-hex#readme",
+  "description": "Convert HSL colors to RGB colors in hex format.",
+  "dependencies": {
+    "hsl-to-rgb-for-reals": "^1.1.1"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4",
+    "tap": "^14.10.8"
+  },
+  "directories": {
+    "test": "test"
+  }
 }
